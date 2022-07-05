@@ -1,3 +1,4 @@
+import 'package:design_clones/widgets/one_third_square.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -8,50 +9,41 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  double textSize=20;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text("Slider"),
+        title: Text("Sudoku"),
         centerTitle: true,
       ),
       body: Center(
-        child: Column(
-          children: [
-            Container(
-              margin: EdgeInsets.only(top: 30,bottom: 60),
-              child: SliderTheme(
-                data: SliderTheme.of(context).copyWith(
-                  trackHeight: 7,
-                  trackShape: RoundedRectSliderTrackShape(),
-                  activeTrackColor: Colors.blue,
-                  inactiveTickMarkColor: Colors.grey,
-                  thumbColor: Colors.black,
-                  overlayColor: Colors.red,
-                  thumbShape: RoundSliderThumbShape(
-                    enabledThumbRadius: 14.0,
-                    pressedElevation: 8.0,
-                  ),
-                ),
-                child: Slider(
-                    value: textSize,
-                    label: double.parse((textSize).toStringAsFixed(2)).toString(),
-                    divisions: 100,
-                    min: 20,
-                    max: 100,
-                    onChanged: (double size){
-                      setState(() {
-                        textSize=size;
-                      });
-                    }
-                ),
-              )
+        child: Expanded(
+          child: SizedBox(
+            width: (MediaQuery.of(context).size.width)-30,
+            height: (MediaQuery.of(context).size.width)-30,
+            child: GridView(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                crossAxisSpacing: 0,
+                mainAxisSpacing: 0,
+                childAspectRatio: 1
+              ),
+              children: [
+                OneThirdSquare(),
+                OneThirdSquare(),
+                OneThirdSquare(),
+                OneThirdSquare(),
+                OneThirdSquare(),
+                OneThirdSquare(),
+                OneThirdSquare(),
+                OneThirdSquare(),
+                OneThirdSquare(),
+              ],
             ),
-            Text("Text",style: TextStyle(fontSize: textSize,color: Colors.blue),)
-          ],
-        ),
+          )
+        )
       ),
     );
   }
