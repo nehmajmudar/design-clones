@@ -1,4 +1,4 @@
-import 'package:design_clones/screens/home_screen.dart';
+import 'package:design_clones/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: HomePage(),
     );
   }
 }
