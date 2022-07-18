@@ -9,4 +9,6 @@ class AppColors{
   static final Color colorSliderInctive=Color(0xFFB7DFDB);
   static final Color colorSliderThumb=Color(0xFF01635D);
   static final Color colorReset=Color(0xFFFEA36B);
+  static final Color colorGrey=Color(0xFF808080);
+  static final Color colorBlack=Color(0xFF000000);
 }

@@ -12,8 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Travelly app trip filters page',
-      home: HomeScreen(),
+      home: HomePage(),
     );
   }
 }
