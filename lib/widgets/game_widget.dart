@@ -14,7 +14,7 @@ class _GameWidgetState extends State<GameWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 15),
+      padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/26.1818),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

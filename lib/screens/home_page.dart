@@ -19,6 +19,8 @@ class _HomePageState extends State<HomePage> {
     print(MediaQuery.of(context).size.height/60);
     print(MediaQuery.of(context).size.height/75);
     print(MediaQuery.of(context).size.height/373);
+    print(MediaQuery.of(context).size.width/15);
+    print(MediaQuery.of(context).size.width/20);
     return Scaffold(
       backgroundColor: AppColors.colorBlack,
       appBar: AppBar(
@@ -49,8 +51,8 @@ class _HomePageState extends State<HomePage> {
                   crossAxisCount: 3,
                   // crossAxisSpacing: 10,
                   // mainAxisSpacing: 3,
-                  mainAxisExtent: MediaQuery.of(context).size.height/1.9790,
-                  childAspectRatio: 3.5/1
+                  mainAxisExtent: MediaQuery.of(context).size.width-MediaQuery.of(context).size.width/19.63,
+                  // childAspectRatio: 3.5/1
                 ),
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -88,11 +90,11 @@ class _HomePageState extends State<HomePage> {
                 //   crossAxisSpacing: 10,
                 // ),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    // crossAxisSpacing: 10,
-                    // mainAxisSpacing: 3,
-                    mainAxisExtent: MediaQuery.of(context).size.height/1.9790,
-                    childAspectRatio: 3.5/1
+                  crossAxisCount: 3,
+                  // crossAxisSpacing: 10,
+                  // mainAxisSpacing: 3,
+                  mainAxisExtent: MediaQuery.of(context).size.width-MediaQuery.of(context).size.width/19.63,
+                  // childAspectRatio: 3.5/1
                 ),
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -130,11 +132,11 @@ class _HomePageState extends State<HomePage> {
                 //   crossAxisSpacing: 10,
                 // ),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    // crossAxisSpacing: 10,
-                    // mainAxisSpacing: 3,
-                    mainAxisExtent: MediaQuery.of(context).size.height/1.9790,
-                    childAspectRatio: 3.5/1
+                  crossAxisCount: 3,
+                  // crossAxisSpacing: 10,
+                  // mainAxisSpacing: 3,
+                  mainAxisExtent: MediaQuery.of(context).size.width-MediaQuery.of(context).size.width/19.63,
+                  // childAspectRatio: 3.5/1
                 ),
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -172,11 +174,11 @@ class _HomePageState extends State<HomePage> {
                 //   crossAxisSpacing: 10,
                 // ),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    // crossAxisSpacing: 10,
-                    // mainAxisSpacing: 3,
-                    mainAxisExtent: MediaQuery.of(context).size.height/1.9790,
-                    childAspectRatio: 3.5/1
+                  crossAxisCount: 3,
+                  // crossAxisSpacing: 10,
+                  // mainAxisSpacing: 3,
+                  mainAxisExtent: MediaQuery.of(context).size.width-MediaQuery.of(context).size.width/19.63,
+                  // childAspectRatio: 3.5/1
                 ),
                 scrollDirection: Axis.horizontal,
                 children: [
